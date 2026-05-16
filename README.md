@@ -26,7 +26,7 @@ It manages Products and Categories with a Many-to-Many relationship.
  
 🛠 Tech Stack
 
-- ASP.NET Core (.NET 9)  
+- ASP.NET Core  
 - C#  
 - Entity Framework Core  
 - SQL Server  
