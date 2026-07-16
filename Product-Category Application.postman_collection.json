@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "6f6c7cd0-b7e2-4b13-a0ba-8dd7dbfff8dd",
+		"name": "Product-Category Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49156594",
+		"_collection_link": "https://albertavagyan-9865805.postman.co/workspace/Albert-'s-Workspace~3253a612-3e26-450c-8330-1aabcdba70ba/collection/49156594-6f6c7cd0-b7e2-4b13-a0ba-8dd7dbfff8dd?action=share&source=collection_link&creator=49156594"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Led Lamps\",\r\n  \"price\": 125,\r\n  \"categoryIds\": [\r\n    1,3\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/Product/CreateProduct",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Product",
+								"CreateProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductByid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/Product/GetProductById/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Product",
+								"GetProductById",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllproductspaged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/Product/GetAllProductsPaged",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Product",
+								"GetAllProductsPaged"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"led lamps\",\r\n  \"price\": 325,\r\n  \"categoryIds\": [\r\n    1,2,3\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/Product/UpdateProduct/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Product",
+								"UpdateProduct",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"led lamps\",\r\n  \"price\": 325,\r\n  \"categoryIds\": [\r\n    1,2,3\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7226/Product/DeleteProduct/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Product",
+								"DeleteProduct",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Post Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Personal Care\",\r\n  \"description\": \"A class of consumer products associated hygiene and personal grooming\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/Category/CreateCategory",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Category",
+								"CreateCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategoryByid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/Category/GetCategoryById/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Category",
+								"GetCategoryById",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllCategoriespaged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7226/Category/GetAllCategories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Category",
+								"GetAllCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"personal care\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7226/Category/UpdateCategory/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Category",
+								"UpdateCategory",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"personal care\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7226/Category/DeleteCategory/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7226",
+							"path": [
+								"Category",
+								"DeleteCategory",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
