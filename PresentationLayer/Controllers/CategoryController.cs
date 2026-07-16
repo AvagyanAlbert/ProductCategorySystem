@@ -40,7 +40,6 @@ namespace ASPUserApplication.Controllers
             return Ok(categories);
         }
 
-
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCategory(int id, [FromBody] UpdateCategoryDTO updateCategoryDTO)
         {
